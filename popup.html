@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/popup.css">
+  </head>
+  <body>
+   <div id="app-wrapper">
+    <div id="app-header">
+      <h1>Tab Repeater!</h1>
+    </div>
+    <div id="app-containers">
+      <div class="app-form">
+        <label for="text">URL</label>
+        <input type="text" name="url" id="url" placeholder="Place url here!" ></input>
+
+        <label for="repetition">Repetition</label>
+        <input type="number" name="repetition" id="repetition" min="1" max="1000" value="0"></input>
+      </div>
+      <div class=buttons>
+
+        <button class="button" id="app-reset">
+          Reset
+        </button>
+        <button class="button primary" id="go-button">
+          Go
+        </button>
+      </div>
+    </div>
+   </div>
+   <script src="assets/js/popup.js"></script>
+  </body>
+</html>
