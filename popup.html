@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>Tab Repeater!</title>
     <link rel="stylesheet" href="assets/css/popup.css">
   </head>
   <body>
-   <div id="app-wrapper">
-    <div id="app-header">
-      <h1>Tab Repeater!</h1>
-    </div>
-    <div id="app-containers">
-      <div class="app-form">
-        <label for="text">URL</label>
-        <input type="text" name="url" id="url" placeholder="Place url here!" ></input>
-
-        <label for="repetition">Repetition</label>
-        <input type="number" name="repetition" id="repetition" min="1" max="1000" value="0"></input>
+    <div id="app-wrapper">
+      <div id="app-header">
+        <h1>Tab Repeater!</h1>
       </div>
-      <div class=buttons>
-
-        <button class="button" id="app-reset">
-          Reset
-        </button>
-        <button class="button primary" id="go-button">
-          Go
-        </button>
+      <div id="app-containers">
+        <div class="app-form">
+          <label for="url">URL</label>
+          <input type="url" name="url" id="url" value="Place url here!" />
+          <label for="delay">Delay between tabs (ms)</label>
+          <input id="delay" type="number" min="0" value="500" placeholder="Delay (ms)" />
+          <label for="repetition">Repetition</label>
+          <input type="number" name="repetition" id="repetition" min="1" max="1000" value="3"/>
+        </div>
+        <div class=buttons>
+          <button class="button" id="app-reset">
+            Reset
+          </button>
+          <button class="button primary" id="go-button">
+            Go
+          </button>
+          </div>
       </div>
     </div>
-   </div>
-   <script src="assets/js/popup.js"></script>
+    <script src="assets/js/popup.js"></script>
   </body>
 </html>
